@@ -34,8 +34,3 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
 # SFTP support
 gem 'net-sftp', '~> 2.1', '>= 2.1.2'
-
-# Deployment
-gem "capistrano", "~> 3.17", require: false
-gem "ed25519", ">= 1.2", "< 2.0"
-gem "bcrypt_pbkdf", ">= 1.0", "< 2.0"
