@@ -1,0 +1,18 @@
+# Site settings
+title: Haul Brothers
+email: jason@haulbrothersinc.com
+url: https://www.haulbrothersinc.com
+description: "Delivering estate solutions for over 22 years! Dedicated to providing a full range of estate solutions."
+keywords: "estate,hauling,cleaning,sales,antiques,clean out,sweep out,cumberland, frostburg, western maryland, maryland"
+
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary-dark: '#000000'
+  links: '#219ab3'
+
+# Footer settings
+footer: Haul Brothers, Inc.
+
+# Build settings
+markdown: kramdown
+permalink: pretty

@@ -1,0 +1,43 @@
+{
+  "name": "haulbrothersinc.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Gulpfile.js",
+  "type": "module",
+  "scripts": {
+    "watch:sass": "gulp watch",
+    "watch:js": "rollup --config rollup.config.js --watch",
+    "watch:html": "npm run clean:project && bundle exec jekyll serve --watch --draft --incremental",
+    "watch": "concurrently \"npm run watch:html\" \"npm run watch:sass\" \"npm run watch:js\"",
+    "build": "npm run clean:project && gulp buildSass && rollup --config rollup.config.js && bundle exec jekyll build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean:project": "rimraf ./_site"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "concurrently": "^8.2.2",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^9.0.0",
+    "gulp-rollup": "^2.17.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "material-design-icons": "^3.0.1",
+    "rimraf": "^5.0.5",
+    "rollup": "^4.5.0",
+    "sass": "^1.69.5"
+  },
+  "devDependencies": {
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-eslint": "^9.0.5",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "eslint": "^8.54.0",
+    "eslint-config-alloy": "^5.1.2",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-n": "^16.3.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-vue": "^9.18.1"
+  }
+}

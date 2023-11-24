@@ -1,0 +1,44 @@
+.pulsing-button {
+  -webkit-animation: pulsing 3s infinite cubic-bezier(0.66, 0, 0, 1);
+  -moz-animation: pulsing 3s infinite cubic-bezier(0.66, 0, 0, 1);
+  -ms-animation: pulsing 3s infinite cubic-bezier(0.66, 0, 0, 1);
+  animation: pulsing 3s infinite cubic-bezier(0.66, 0, 0, 1);
+  transition: all 20s ease-in-out;
+}
+
+
+/* Comment-out to have the button continue to pulse on mouseover */
+
+a.pulsing-button:hover {
+  -webkit-animation: none;
+  -moz-animation: none;
+  -ms-animation: none;
+  animation: none;
+}
+
+
+/* Animation */
+
+@-webkit-keyframes pulsing {
+  to {
+    box-shadow: 0 0 0 30px rgba(232, 76, 61, 0);
+  }
+}
+
+@-moz-keyframes pulsing {
+  to {
+    box-shadow: 0 0 0 30px rgba(232, 76, 61, 0);
+  }
+}
+
+@-ms-keyframes pulsing {
+  to {
+    box-shadow: 0 0 0 30px rgba(232, 76, 61, 0);
+  }
+}
+
+@keyframes pulsing {
+  to {
+    box-shadow: 0 0 0 30px rgba(232, 76, 61, 0);
+  }
+}
